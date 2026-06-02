@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#b35cff" />
+  <title>Alexis Wellness Companion</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="floating f1">♡</div>
+  <div class="floating f2">✿</div>
+  <div class="floating f3">🦋</div>
+  <div class="floating f4">✦</div>
+
+  <main class="app">
+    <section class="hero">
+      <div class="top-pill">Alexis’ Wellness Companion</div>
+      <div class="avatar">A</div>
+      <h1 id="greeting">Hi Alexis</h1>
+      <p id="todayLine">A soft reminder that you are loved, covered, and cared for today.</p>
+
+      <div class="hero-grid">
+        <div><strong id="heroPercent">0%</strong><span>Meds Done</span></div>
+        <div><strong id="streakCount">0</strong><span>Day Streak</span></div>
+        <div><strong id="waterCount">0/8</strong><span>Water</span></div>
+      </div>
+    </section>
+
+    <section class="card encouragement-card">
+      <p class="eyebrow">Daily Encouragement</p>
+      <h2 id="dailyQuote">Loading quote...</h2>
+      <p class="soft-text">A little love for today.</p>
+    </section>
+
+    <section class="card verse-card">
+      <p class="eyebrow">Bible Verse of the Day</p>
+      <h2 id="verseText">Loading verse...</h2>
+      <p id="verseRef" class="verse-ref"></p>
+    </section>
+
+    <section class="card love-card">
+      <p class="eyebrow">Richard’s Love Note</p>
+      <h2 id="loveNote">Loading love note...</h2>
+    </section>
+
+    <section class="card">
+      <div class="section-title">
+        <div>
+          <p class="eyebrow">Today</p>
+          <h2>Medication Checklist</h2>
+        </div>
+        <span class="date-bubble" id="todayDate"></span>
+      </div>
+
+      <div class="progress-shell">
+        <div class="progress-bar" id="progressBar"></div>
+      </div>
+      <p class="progress-text" id="progressText">0% complete today</p>
+
+      <div class="med-list" id="medList"></div>
+
+      <form id="addMedForm" class="add-form">
+        <label>
+          <span>Medication</span>
+          <input id="medName" type="text" placeholder="Ex: Morning medication" required />
+        </label>
+        <label>
+          <span>Time</span>
+          <input id="medTime" type="time" required />
+        </label>
+        <button type="submit">+ Add Reminder</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <p class="eyebrow">Water Tracker</p>
+      <h2>Hydration Goal</h2>
+      <div class="water-grid" id="waterGrid"></div>
+      <button id="resetWater" class="secondary-btn">Reset Water</button>
+    </section>
+
+    <section class="card">
+      <p class="eyebrow">Mood Tracker</p>
+      <h2>How are you feeling?</h2>
+      <div class="mood-grid" id="moodGrid">
+        <button data-mood="Amazing">😊<span>Amazing</span></button>
+        <button data-mood="Good">🙂<span>Good</span></button>
+        <button data-mood="Okay">😐<span>Okay</span></button>
+        <button data-mood="Rough">😔<span>Rough</span></button>
+        <button data-mood="Need Love">😭<span>Need Love</span></button>
+      </div>
+      <p id="moodText" class="progress-text">No mood selected yet.</p>
+    </section>
+
+    <section class="card notes-card">
+      <p class="eyebrow">Wellness Notes</p>
+      <h2>Alexis’ Daily Notes</h2>
+      <textarea id="dailyNotes" placeholder="Mood, symptoms, side effects, water, food, or anything important..."></textarea>
+      <button id="saveNotes">Save Notes</button>
+    </section>
+
+    <section class="card emergency-card">
+      <p class="eyebrow">Emergency / Support</p>
+      <h2>Need help?</h2>
+      <p class="soft-text">Keep important support contacts close.</p>
+      <div class="support-buttons">
+        <a href="tel:" class="support-btn">Call Richard ❤️</a>
+        <a href="sms:" class="support-btn">Text Support 💜</a>
+        <a href="tel:911" class="support-btn danger">Emergency 911</a>
+      </div>
+    </section>
+
+    <footer>
+      Made with love for Alexis ♡
+    </footer>
+  </main>
+
+  <div id="confetti"></div>
+  <script src="app.js"></script>
+</body>
+</html>
