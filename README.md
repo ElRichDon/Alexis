@@ -1,33 +1,32 @@
-# Alexis Wellness Companion v2
+# Alexis Wellness Companion - Final
 
-A cute pink and purple wellness companion made for Alexis.
+GitHub Pages-ready wellness companion website for Alexis.
+
+## Final updates
+- Added approved mood avatar images
+- Mood cards now match the avatar expressions
+- Added “Send mood to Richard” SMS button
+- Button opens the phone texting app with a prefilled mood message
+
+## SMS feature
+The mood button uses this format:
+
+sms:6466219577?&body=Hi Richard, today I am feeling [Mood]. 💜
+
+On iPhone/Safari, this should open Messages with the text prefilled.
+She still has to press Send herself.
 
 ## Features
-
-- Medication checklist
-- Daily cute quote
-- Bible Verse of the Day
-- Richard's Love Notes
+- Medication tracker with auto-save
 - Water tracker
-- Mood tracker
-- Daily notes
-- Medication streak counter
-- Cute confetti when meds are checked
-- GitHub Pages ready
-- PWA-ready so it can be added to an iPhone home screen
-
-## How to Use
-
-1. Open `index.html` in your browser.
-2. Add or check off medication reminders.
-3. Track water, mood, and notes.
-4. Upload the folder to GitHub.
-5. Enable GitHub Pages.
+- Mood tracker with custom avatars
+- Daily quote
+- Bible verse
+- Richard's love note
+- Streak tracker
+- Confetti animation
+- PWA-ready
 
 ## GitHub Pages
-
-Settings → Pages → Deploy from branch → main → root.
-
-## Important
-
-This app stores data locally in the browser using localStorage. It is not a medical device and does not replace professional medical advice.
+Upload the files inside this folder to your repo root:
+Settings → Pages → Deploy from branch → main → /root

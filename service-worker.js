@@ -1,11 +1,18 @@
-const CACHE_NAME = "alexis-wellness-v2";
+const CACHE_NAME = "alexis-princess-wellness-final-moods";
 const FILES = [
   "./",
   "./index.html",
   "./style.css",
   "./app.js",
   "./manifest.json",
-  "./assets/icon.svg"
+  "./assets/icon.svg",
+  "./assets/alexis-avatar.png",
+  "./assets/moods/amazing.png",
+  "./assets/moods/good.png",
+  "./assets/moods/okay.png",
+  "./assets/moods/struggling.png",
+  "./assets/moods/anxious.png",
+  "./assets/moods/support.png"
 ];
 
 self.addEventListener("install", event => {

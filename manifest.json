@@ -3,8 +3,8 @@
   "short_name": "Alexis Care",
   "start_url": "./index.html",
   "display": "standalone",
-  "background_color": "#ffe3f3",
-  "theme_color": "#b35cff",
+  "background_color": "#ffd8ed",
+  "theme_color": "#f35ab7",
   "icons": [
     {
       "src": "assets/icon.svg",
